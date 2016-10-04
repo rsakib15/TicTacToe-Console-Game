@@ -61,8 +61,11 @@ namespace TicTacToe
                     mark[7] = turn;
                 else if (choice == 9 && mark[8] == '9')
                     mark[8] = turn;
-                else
-                    Console.WriteLine("Invalid Move");             
+                else{
+                    Console.WriteLine("Invalid Move");  
+                    i--;
+                    player--;
+                }
 
 
                 player++;
